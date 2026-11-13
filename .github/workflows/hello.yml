@@ -13,4 +13,11 @@ jobs:
       - run: ls -l
       - uses: actions/checkout@v5
       - run: ls -l
-          
+      - name: run a mutli-line script
+        run: |
+            echo "Hello $MY_ENV"
+            echo "Hello $GITHUB_ACTOR"
+    env:
+      MY_ENV: "John Doe"
+
+    
