@@ -1,4 +1,4 @@
-name: Hello World Traning Workflow
+name: Hello World Training Workflow
 
 on:
   workflow_dispatch: 
@@ -7,7 +7,10 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-    # List all files in the current directory for comparison before and after actions/checkout@v5.
-    - uses: actions/checkout@v5
-    - run: ls -l
+      - name: Greet the User
+        run: echo "Hello World!"
+      # List all files in the current directory for comparison before and after actions/checkout@v5.
+      - run: ls -l
+      - uses: actions/checkout@v5
+      - run: ls -l
           
