@@ -10,6 +10,7 @@ const Global = createGlobalStyle`
 `;
 
 //New comment
+//Another new comment
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
